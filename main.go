@@ -42,7 +42,7 @@ func (c *CFHTTPPlugin) GetMetadata() plugin.PluginMetadata {
 }
 
 func (c *CFHTTPPlugin) http(cliConnection plugin.CliConnection, args []string) {
-	cmdArgs := []string{"--body", "--ignore-stdin"}
+	cmdArgs := []string{"--ignore-stdin"}
 	verb := "get"
 	path := args[0]
 	httpArgs := args[1:]
